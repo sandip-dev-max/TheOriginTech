@@ -1,0 +1,72 @@
+.team-image-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.team-image-head {
+  background-color: black;
+  color: rgb(144, 181, 214);
+  font-size: 5rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 0 0 1.2rem 0;
+}
+
+.team-image-slider-track {
+  display: flex;
+  width: 100vw;
+  animation: scroll 15s linear infinite alternate;
+}
+
+.team-image-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  margin-right: 2rem;
+}
+
+.team-image-card img {
+  width: 350px;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.team-image-card img:hover {
+  transform: scale(1.05);
+}
+
+.team-image-info {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.team-image-info h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.team-image-info p {
+  font-size: 1rem;
+  margin: 0;
+  color: gray;
+}
+
+.team-image-slider:hover .team-image-slider-track {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-350px * 4));
+  }
+}

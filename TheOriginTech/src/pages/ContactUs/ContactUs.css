@@ -1,0 +1,16 @@
+.contactImageContainer {
+  display: block;
+  margin-bottom: 90vh;
+}
+.contactImageContainer img {
+  width: 100vw;
+  height: 100vh;
+  background: fixed;
+  position: absolute;
+  top: 0;
+}
+
+.headOfContacts {
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+}

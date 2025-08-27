@@ -1,0 +1,521 @@
+.ecommerceServiceListDetailContainer {
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.ecommerceHeadContainer {
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+  color: white;
+}
+
+.ecommerceHero-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #00d4ff, #0099cc, #667eea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+}
+
+.ecommerceHero-description {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #e2e8f0;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.ecommerceHero-image {
+  margin: 3rem 0;
+  opacity: 0.95;
+}
+
+.ecommerceHero-image svg {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.ecommerceContainer {
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.ecommerceGrid {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.ecommerceGrid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.ecommerceGrid-4 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.ecommerceCard {
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #303236;
+}
+
+.ecommerceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.webApptech-item {
+  background: rgba(55, 65, 81, 0.5);
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.webApptech-item:hover {
+  background: rgba(75, 85, 99, 0.5);
+  border: 1px solid #0babf5;
+}
+
+.webApptech-item-icon {
+  font-size: 2rem;
+  color: #06b6d4;
+}
+
+.ecommerceCard-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.ecommerceIcon-blue {
+  background: linear-gradient(135deg, #00d4ff, #0099cc);
+}
+
+.ecommerceIcon-purple {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.ecommerceIcon-green {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.ecommerceCard-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.ecommerceCard-description {
+  color: #c0c6cf;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.ecommerceFeatures {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ecommerceFeatures li {
+  padding: 0.5rem 0;
+  color: #deecff;
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.ecommerceFeatures li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #10b981;
+  font-weight: bold;
+}
+
+.ecommerceSection-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.ecommerceSection-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #00d4ff, #667eea);
+  border-radius: 2px;
+}
+
+.ecommerceProcess-card {
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+  position: relative;
+  overflow: hidden;
+}
+
+.ecommerceProcess-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #00d4ff, #0099cc, #667eea);
+}
+
+.ecommerceProcess-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+}
+
+.ecommerceProcess-step {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00d4ff, #667eea);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0 auto 1.5rem;
+}
+
+.ecommerceProcess-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.ecommerceProcess-description {
+  color: #64748b;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.ecommerceTech-section {
+  border-radius: 20px;
+  padding: 3rem;
+  margin-bottom: 4rem;
+}
+
+.ecommerceTech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.ecommerceTech-category {
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.ecommerceTech-category-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.ecommerceTech-item {
+  color: #e7e5e5;
+  background-color: #1e2122;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.ecommerceTech-item:hover {
+  background: #222325;
+  cursor: pointer;
+}
+
+.ecommerceBenefits-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.ecommerceBenefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.ecommerceBenefit-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.ecommerceBenefit-icon {
+  width: 40px;
+  height: 40px;
+  color: #00d4ff;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.ecommerceBenefit-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.ecommerceBenefit-desc {
+  color: #8a919b;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.ecommerceCta-card {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  color: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.ecommerceCta-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 212, 255, 0.1) 0%,
+    rgba(102, 126, 234, 0.1) 100%
+  );
+  pointer-events: none;
+}
+
+.ecommerceCta-icon {
+  width: 50px;
+  height: 50px;
+  color: #00d4ff;
+  margin: 0 auto 1.5rem;
+}
+
+.ecommerceCta-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.ecommerceCta-description {
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.ecommerceBtn-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ecommerceBtn {
+  padding: 0.875rem 2rem;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.ecommerceBtn-primary {
+  background: linear-gradient(135deg, #00d4ff, #0099cc);
+  color: white;
+  box-shadow: 0 5px 20px rgba(0, 212, 255, 0.3);
+}
+
+.ecommerceBtn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 212, 255, 0.4);
+}
+
+.ecommerceBtn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid #475569;
+}
+
+.ecommerceBtn-secondary:hover {
+  background: #475569;
+  color: white;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .ecommerceServiceListDetailContainer {
+    padding: 1rem 0;
+  }
+
+  .ecommerceHeadContainer {
+    padding: 0 1rem;
+  }
+
+  .ecommerceHero-title {
+    font-size: 2.5rem;
+  }
+
+  .ecommerceHero-description {
+    font-size: 1.1rem;
+  }
+
+  .ecommerceContainer {
+    padding: 2rem 1rem;
+  }
+
+  .ecommerceGrid-3,
+  .ecommerceGrid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .ecommerceBenefits-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ecommerceTech-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .ecommerceSection-title {
+    font-size: 2rem;
+  }
+
+  .ecommerceCard,
+  .ecommerceProcess-card {
+    padding: 1.5rem;
+  }
+
+  .ecommerceTech-section {
+    padding: 2rem 1rem;
+  }
+
+  .ecommerceBtn-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ecommerceBtn {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ecommerceHero-title {
+    font-size: 2rem;
+  }
+
+  .ecommerceHero-description {
+    font-size: 1rem;
+  }
+
+  .ecommerceCard,
+  .ecommerceProcess-card {
+    padding: 1.25rem;
+  }
+
+  .ecommerceCta-card {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* Animation Classes */
+@keyframes ecommerceFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ecommerceCard,
+.ecommerceProcess-card {
+  animation: ecommerceFadeInUp 0.6s ease-out;
+}
+
+/* Scroll Animations */
+.ecommerceCard:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.ecommerceCard:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.ecommerceCard:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.ecommerceProcess-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.ecommerceProcess-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.ecommerceProcess-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.ecommerceProcess-card:nth-child(4) {
+  animation-delay: 0.4s;
+}

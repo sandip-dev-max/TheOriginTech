@@ -1,0 +1,507 @@
+.ppcServiceListDetailContainer {
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.ppcHeadContainer {
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+  color: white;
+}
+
+.ppcHero-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(105deg, #0bc6f5, #fdffff, #0975b4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+}
+
+.ppcHero-description {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #e2e8f0;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.ppcHero-image {
+  margin: 3rem 0;
+  opacity: 0.95;
+}
+
+.ppcHero-image svg {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.ppcContainer {
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.ppcGrid {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.ppcGrid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.ppcGrid-4 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.ppcCard {
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #1e2733;
+  position: relative;
+  overflow: hidden;
+}
+
+.ppcCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 60px rgba(51, 50, 50, 0.15);
+}
+
+.ppcCard-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.ppcIcon-orange {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.ppcIcon-blue {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+.ppcIcon-green {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.ppcCard-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #0975b4;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.ppcCard-description {
+  color: #c9d5e6;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.ppcFeatures {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ppcFeatures li {
+  padding: 0.5rem 0;
+  color: #f1f4f7;
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.ppcFeatures li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.ppcSection-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #2563eb;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.ppcSection-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #dde6ec, #0685d9);
+  border-radius: 2px;
+}
+
+.ppcProcess-card {
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #494d52;
+  position: relative;
+  overflow: hidden;
+}
+
+.ppcProcess-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #0bb3f5, #069dd9, #0984b4);
+}
+
+.ppcProcess-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 50px rgba(31, 30, 30, 0.12);
+}
+
+.ppcProcess-step {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0bc6f5, #098cb4);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0 auto 1.5rem;
+}
+
+.ppcProcess-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #0685d9;
+  margin-bottom: 1rem;
+}
+
+.ppcProcess-description {
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.ppcTech-section {
+  border-radius: 20px;
+  padding: 3rem;
+  margin-bottom: 4rem;
+}
+
+.ppcTech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.ppcTech-category {
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.ppcTech-category-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.ppcTech-item {
+  background: rgba(55, 65, 81, 0.5);
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ppcTech-item:hover {
+  background: rgba(75, 85, 99, 0.5);
+  border: 1px solid #0babf5;
+}
+
+.ppcTech-item-icon {
+  font-size: 2rem;
+  color: #069dd9;
+}
+
+.ppcBenefits-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.ppcBenefit-item {
+  display: flex;
+  background-color: #212425;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.ppcBenefit-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.ppcBenefit-icon {
+  width: 40px;
+  height: 40px;
+  color: #0685d9;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.ppcBenefit-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.ppcBenefit-desc {
+  color: #dee3e9;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.ppcCta-card {
+  background: linear-gradient(135deg, #357de9 0%, #1754a8 100%);
+  color: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(13, 73, 143, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.ppcCta-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(245, 158, 11, 0.1) 0%,
+    rgba(217, 119, 6, 0.1) 100%
+  );
+  pointer-events: none;
+}
+
+.ppcCta-icon {
+  width: 50px;
+  height: 50px;
+  color: aqua;
+  margin: 0 auto 1.5rem;
+}
+
+.ppcCta-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.ppcCta-description {
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.ppcBtn-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ppcBtn {
+  padding: 0.875rem 2rem;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.ppcBtn-primary {
+  background: linear-gradient(135deg, #4c89e4, #10468d);
+  color: white;
+  box-shadow: 0 5px 20px rgba(245, 158, 11, 0.3);
+}
+
+.ppcBtn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(245, 158, 11, 0.4);
+}
+
+.ppcBtn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid #475569;
+}
+
+.ppcBtn-secondary:hover {
+  background: #345d97;
+  color: white;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .ppcServiceListDetailContainer {
+    padding: 1rem 0;
+  }
+
+  .ppcHeadContainer {
+    padding: 0 1rem;
+  }
+
+  .ppcHero-title {
+    font-size: 2.5rem;
+  }
+
+  .ppcHero-description {
+    font-size: 1.1rem;
+  }
+
+  .ppcContainer {
+    padding: 2rem 1rem;
+  }
+
+  .ppcGrid-3,
+  .ppcGrid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .ppcBenefits-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ppcTech-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .ppcSection-title {
+    font-size: 2rem;
+  }
+
+  .ppcCard,
+  .ppcProcess-card {
+    padding: 1.5rem;
+  }
+
+  .ppcTech-section {
+    padding: 2rem 1rem;
+  }
+
+  .ppcBtn-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ppcBtn {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ppcHero-title {
+    font-size: 2rem;
+  }
+
+  .ppcHero-description {
+    font-size: 1rem;
+  }
+
+  .ppcCard,
+  .ppcProcess-card {
+    padding: 1.25rem;
+  }
+
+  .ppcCta-card {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@keyframes ppcFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ppcCard,
+.ppcProcess-card {
+  animation: ppcFadeInUp 0.6s ease-out;
+}
+
+.ppcCard:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.ppcCard:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.ppcCard:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.ppcProcess-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.ppcProcess-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.ppcProcess-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.ppcProcess-card:nth-child(4) {
+  animation-delay: 0.4s;
+}

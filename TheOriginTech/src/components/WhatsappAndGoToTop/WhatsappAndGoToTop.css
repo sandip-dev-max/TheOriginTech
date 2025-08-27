@@ -1,0 +1,29 @@
+.whatsapp-container {
+  position: fixed;
+  bottom: 2vh;
+  right: 1.5vw;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.whatsapp-container:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-icon {
+  width: 50px;
+  background-color: green;
+  color: white;
+  outline: none;
+  border-radius: 50%;
+}
+
+.goToTop {
+  position: fixed;
+  font-size: 3.5rem;
+  bottom: 8vh;
+  right: 1.3vw;
+  z-index: 100;
+  cursor: pointer;
+  color: rgb(66, 235, 235);
+}

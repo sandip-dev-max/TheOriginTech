@@ -1,0 +1,144 @@
+.header {
+  position: sticky;
+  top: 20px;
+  z-index: 100;
+  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(192, 192, 192, 0.3);
+  border-top-color: rgba(192, 192, 192, 0.3);
+  width: 80vw;
+  margin-left: 10vw;
+  margin-top: 25px;
+  border-radius: 15px;
+  background-color: rgb(85, 107, 134, 0.1);
+  border-color: 2px solid blue;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.logo {
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  letter-spacing: 3px;
+  font-family: "Inter", sans-serif;
+}
+
+.logo img {
+  width: 95px;
+  height: 75px;
+  border-radius: 6px;
+  padding: 5px;
+  background: linear-gradient(45deg, #0982e6, #5690c7, #327cc7);
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin-left: 5rem;
+}
+
+.nav-menu a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.nav-link.active {
+  color: #04b8ff;
+  font-weight: 800;
+  text-shadow: 0 0 10px rgba(0, 77, 153, 0.5);
+}
+
+.cta-button {
+  padding: 12px 30px;
+  background: linear-gradient(45deg, #001a2e, #003366, #004d99);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  margin: auto 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(6, 124, 243, 0.3);
+}
+
+.getStarted-btn {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 77, 153, 0.5);
+  color: white;
+}
+
+.dropdownStyle {
+  display: none;
+  position: fixed;
+  top: 100px;
+  right: 400px;
+  z-index: 3333;
+}
+
+.services:hover .dropdownStyle {
+  display: block;
+}
+
+.HamburgerMenu {
+  visibility: hidden;
+}
+
+.hambergerBtn,
+.GiHamburgerMenu {
+  display: none;
+}
+
+/* .FormPupupFilling {
+  z-index: 1000;
+  position: absolute;
+  top: 3vh;
+  width: 70vw;
+  background-color: red;
+  border-radius: 10px;
+} */
+
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 0 20px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .cta-button {
+    display: none;
+  }
+
+  .hamburgerBtn,
+  .GiHamburgerMenu {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: 3.5rem;
+  }
+}

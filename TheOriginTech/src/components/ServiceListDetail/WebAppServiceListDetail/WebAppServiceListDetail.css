@@ -1,0 +1,372 @@
+.WebAppServiceListDetailcontainer {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.WebAppHero-title {
+  text-align: center;
+  padding: 1rem;
+}
+
+.headContainer {
+  margin-bottom: 2rem;
+}
+
+.WebApphero-image {
+  max-width: 600px;
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.WebApphero-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(6, 182, 212, 0.1),
+    rgba(139, 92, 246, 0.1)
+  );
+  z-index: 2;
+}
+
+.WebApphero-image svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.WebApphero {
+  background: linear-gradient(135deg, #111827 0%, #1f2937 50%, #111827 100%);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.WebApphero-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  background: linear-gradient(135deg, #06b6d4, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.headContainer p {
+  font-size: 1.5rem;
+  color: #d1d5db;
+  margin: 0 auto;
+  padding: 1rem 15rem 2rem 15rem;
+  text-align: center;
+}
+
+.webAppsection-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 48px;
+  background: linear-gradient(135deg, #06b6d4, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.webAppgrid {
+  display: grid;
+  gap: 32px;
+  margin-bottom: 80px;
+}
+
+.webAppgrid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.webAppgrid-4 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.webAppcard {
+  background: rgba(31, 41, 55, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid rgba(75, 85, 99, 0.5);
+  transition: all 0.3s ease;
+}
+
+.webAppcard:hover {
+  transform: scale(1.05);
+  border-color: #6b7280;
+}
+
+.webAppcard-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 24px;
+  padding: 16px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.webAppicon-blue {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+}
+
+.webAppicon-purple {
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+}
+
+.webAppicon-green {
+  background: linear-gradient(135deg, #10b981, #14b8a6);
+}
+
+.webAppcard-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.webAppcard-description {
+  color: #9ca3af;
+  margin-bottom: 24px;
+}
+
+.webAppfeatures {
+  list-style: none;
+}
+
+.webAppfeatures li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  color: #d1d5db;
+  font-size: 0.9rem;
+}
+
+.webAppfeatures li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #06b6d4;
+  border-radius: 50%;
+}
+
+.webAppprocess-card {
+  background: rgba(31, 41, 55, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid rgba(75, 85, 99, 0.3);
+  position: relative;
+  transition: border-color 0.3s ease;
+}
+
+.webAppprocess-webAppcard:hover {
+  border-color: rgba(6, 182, 212, 0.5);
+}
+
+.webAppprocess-step {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #06b6d4, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 16px;
+}
+
+.webAppprocess-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: white;
+}
+
+.webAppprocess-description {
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.webApptech-section {
+  background: rgba(31, 41, 55, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 48px;
+  border-radius: 24px;
+  border: 1px solid rgba(75, 85, 99, 0.3);
+  margin-bottom: 80px;
+}
+
+.webApptech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 32px;
+}
+
+.webApptech-category {
+  text-align: center;
+}
+
+.webApptech-category-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #06b6d4;
+  text-transform: capitalize;
+}
+
+.webApptech-item {
+  background: rgba(55, 65, 81, 0.5);
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.webApptech-item:hover {
+  background: rgba(75, 85, 99, 0.5);
+  border: 1px solid #0babf5;
+}
+
+.webApptech-item-icon {
+  font-size: 2rem;
+  color: #06b6d4;
+}
+
+.webAppbenefits-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.webAppbenefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.webAppbenefit-icon {
+  color: #06b6d4;
+  margin-top: 4px;
+  width: 20px;
+  height: 20px;
+}
+
+.webAppbenefit-title {
+  font-weight: 600;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.webAppbenefit-desc {
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.webAppcta-card webAppcard {
+  background: linear-gradient(
+    135deg,
+    rgba(6, 182, 212, 0.1),
+    rgba(139, 92, 246, 0.1)
+  );
+  border-radius: 24px;
+  padding: 48px;
+  border: 1px solid rgba(75, 85, 99, 0.3);
+  text-align: center;
+}
+
+.webAppcta-icon {
+  width: 80px;
+  height: 80px;
+  color: #06b6d4;
+  margin: 0 auto 24px;
+}
+
+.webAppcta-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.webAppcta-description {
+  color: #9ca3af;
+  margin-bottom: 32px;
+}
+
+.webAppbtn-group {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.webAppbtn {
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.webAppbtn-primary {
+  background: linear-gradient(135deg, #06b6d4, #8b5cf6);
+  color: white;
+}
+
+.webAppbtn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(6, 182, 212, 0.25);
+}
+
+.webAppbtn-secondary {
+  background: transparent;
+  border: 2px solid #06b6d4;
+  color: #06b6d4;
+}
+
+.webAppbtn-secondary:hover {
+  background: #06b6d4;
+  color: white;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .WebApphero-title {
+    font-size: 2.5rem;
+  }
+
+  .webAppbenefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .headContainer {
+    padding: 16px;
+  }
+
+  .WebApphero {
+    padding: 40px 0;
+  }
+}

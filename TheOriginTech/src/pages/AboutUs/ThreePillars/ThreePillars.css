@@ -1,0 +1,61 @@
+.three-pillars-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.three-pillars-head {
+  background-color: black;
+  color: rgb(144, 181, 214);
+  font-size: 5rem;
+  font-weight: 900;
+  text-align: center;
+  padding: 1.2rem 0;
+}
+
+.three-pillars-slider-track {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.three-pillars-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  margin-right: 2rem;
+}
+
+.three-pillars-card img {
+  width: 400px;
+  height: 35rem;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.three-pillars-card img:hover {
+  transform: scale(1.05);
+}
+
+/* .three-pillars-info {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.three-pillars-info h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.three-pillars-info p {
+  font-size: 1rem;
+  margin: 0;
+  color: gray;
+} */

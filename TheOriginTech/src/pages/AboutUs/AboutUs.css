@@ -1,0 +1,51 @@
+.firstpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.firstpage h1 {
+  padding: 2rem;
+  color: aqua;
+}
+
+.firstpage p {
+  line-height: 2rem;
+  text-align: center;
+  padding: 1rem 20rem;
+}
+
+.about-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  margin: auto 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 77, 153, 0.5);
+}
+
+.btn-left {
+  background-color: white;
+  color: black;
+  box-shadow: 0 5px 20px rgba(219, 223, 228, 0.3);
+}
+
+.btn-right {
+  color: white;
+  background: linear-gradient(45deg, #001a2e, #003366, #004d99);
+  box-shadow: 0 5px 20px rgba(8, 101, 194, 0.3);
+}

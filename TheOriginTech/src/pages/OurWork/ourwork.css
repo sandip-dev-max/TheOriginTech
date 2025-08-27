@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Montserrat:wght@600&display=swap");
+
+.ourWorkContainer {
+  margin: 0;
+  padding: 1rem 4rem;
+  box-sizing: border-box;
+}
+
+.ourWorkFirstPage {
+  display: grid;
+  grid-template-columns: 1.1fr 0.7fr;
+  gap: 40px;
+}
+
+.rightContainer {
+  margin: auto 0;
+}
+
+.videoLoop {
+  width: 100%;
+}
+
+.firsthead {
+  color: rgb(19, 198, 198);
+  padding: 1rem 0;
+}
+
+.discription {
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  text-align: justify;
+  font-family: 'Montserrat';
+  font-weight: 400;
+}

@@ -1,0 +1,112 @@
+.expertise-heading {
+  font-size: 5rem;
+  font-weight: 900;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  color: rgb(91, 91, 180);
+  background-color: black;
+}
+
+.expertise-container {
+  width: fit-content;
+  background: linear-gradient(
+    180deg,
+    rgba(7, 21, 41, 0.1) 0%,
+    rgb(0, 0, 0) 100%,
+    rgb(0, 0, 0) 100%
+  );
+  padding-bottom: 2rem;
+}
+
+.expertise-newDiv {
+  background: linear-gradient(
+    180deg,
+    rgba(7, 21, 41, 0.1) 0%,
+    rgb(0, 0, 0) 100%,
+    rgb(0, 0, 0) 100%,
+    rgb(0, 0, 0) 100%,
+    rgb(0, 0, 0) 100%
+  );
+}
+
+.expertise-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+  padding: 0 4rem;
+}
+
+.expertise-service-card {
+  background: rgba(15, 15, 15, 0.7);
+  border-radius: 12px;
+  padding: 35px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  min-height: 422px;
+}
+
+.expertise-service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  background: rgba(20, 20, 20, 0.8);
+  border-color: rgba(79, 195, 247, 0.2);
+}
+
+.expertise-service-icon {
+  font-size: 2.5rem;
+  color: #4fc3f7;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: left;
+}
+
+.expertise-service-card h2 {
+  color: #4fc3f7;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: left;
+}
+
+.expertise-service-card h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 2px;
+  background: #4fc3f7;
+}
+
+.expertise-service-card p {
+  margin: 0;
+  color: #e0e0e0;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+  .expertise-services-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 2rem;
+  }
+
+  .expertise-service-card {
+    padding: 25px;
+  }
+
+  .expertise {
+    font-size: 3rem;
+  }
+}
