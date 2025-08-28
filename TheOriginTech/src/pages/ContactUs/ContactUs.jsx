@@ -3,17 +3,29 @@ import Navbar from "../../components/Navbar/Navbar";
 import Form from "../../components/Form/Form";
 import Footer from "../../components/Footer/Footer";
 import WhatsappAndGoToTop from "../../components/WhatsappAndGoToTop/WhatsappAndGoToTop";
-import origintechcontactimage from "../../assets/origintechcontactimage.png";
 import "./ContactUs.css";
+import contactvideo from "../../assets/contactvideo.mp4";
 
 const ContactUs = () => {
   return (
     <>
       <Navbar />
-      <div className="contactImageContainer">
-        <img src={origintechcontactimage} alt="The Origin Tech Image" />
-      </div>
-      <h1 className="headOfContacts">Your First Step to Success</h1>
+
+      <section className="contactHeroVideo">
+        <video
+          autoPlay
+          loop
+          muted
+          className="backgroundVideo"
+          src={contactvideo}
+          type="video/mp4"
+        />
+        <div className="heroContent">
+          <h1>The Origin Tech</h1>
+          <p>Let's create something amazing together.</p>
+        </div>
+      </section>
+
       <Form />
       <Footer />
       <WhatsappAndGoToTop />

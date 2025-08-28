@@ -71,11 +71,11 @@ const OriginTechWebsite = () => {
           </div>
         </div>
 
-        <header className="second-cloumn">
+        <footer className="second-column">
           <div className="logo">
             <h1>THE-ORIGIN-TECH</h1>
           </div>
-          <div className=".second-cloumn-container ">
+          <div className="second-column-container">
             <nav className="nav">
               <div className="nav-section">
                 <h3>Services</h3>
@@ -231,7 +231,7 @@ const OriginTechWebsite = () => {
               </div>
             </nav>
           </div>
-        </header>
+        </footer>
 
         <div className="last-column">
           <div className="container">
