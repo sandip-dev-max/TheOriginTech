@@ -5,13 +5,15 @@ import Footer from "../../components/Footer/Footer";
 import Background from "../../components/Background/Background";
 import WhatsappAndGoToTop from "../../components/WhatsappAndGoToTop/WhatsappAndGoToTop";
 import "./Pricing.css";
-import { useNavigate } from "react-router-dom";
 
 const Pricing = () => {
-  const navigate = useNavigate();
-  const handleSelectPlan = () => {
-    navigate("/contactus");
-    window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
+  // ✅ Handle Select Plan → WhatsApp
+  const handleSelectPlan = (planName, planPrice) => {
+    const phoneNumber = "9779704525401"; // Your WhatsApp number (international format, no + or spaces)
+    const message = `Hello, I am interested in the ${planName} plan (Rs ${planPrice}/month). Please provide me more details.`;
+
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
   };
 
   const pricingData = [
@@ -299,7 +301,11 @@ const Pricing = () => {
                       </div>
                     ))}
                   </div>
-                  <button className="select-btn" onClick={handleSelectPlan}>
+                  {/* ✅ Updated Button with WhatsApp */}
+                  <button
+                    className="select-btn"
+                    onClick={() => handleSelectPlan(plan.name, plan.price)}
+                  >
                     Select Plan
                   </button>
                 </div>
@@ -308,6 +314,7 @@ const Pricing = () => {
           </div>
         ))}
       </div>
+
       <Background />
       <Form />
       <Footer />

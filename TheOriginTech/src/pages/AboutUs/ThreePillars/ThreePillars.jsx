@@ -10,12 +10,12 @@ const ThreePillars = () => {
       <div className="three-pillars-head">The Three Pillars of Origin Tech</div>
       <div className="three-pillars-slider-track">
         <a
-          href={ceo}
+          href={founder}
           target="_blank"
           rel="noopener noreferrer"
           className="three-pillars-card"
         >
-          <img src={ceo} alt="Team Photo 3" />
+          <img src={founder} alt="Team Photo 1" />
           {/* <div className="three-pillars-info">
             <h3>Shivang Dutta</h3>
             <p>CEO</p>
@@ -23,12 +23,12 @@ const ThreePillars = () => {
         </a>
 
         <a
-          href={founder}
+          href={ceo}
           target="_blank"
           rel="noopener noreferrer"
           className="three-pillars-card"
         >
-          <img src={founder} alt="Team Photo 3" />
+          <img src={ceo} alt="Team Photo 2" />
           {/* <div className="three-pillars-info">
             <h3>Bibek Kumar Sharma</h3>
             <p>Founder and Director</p>

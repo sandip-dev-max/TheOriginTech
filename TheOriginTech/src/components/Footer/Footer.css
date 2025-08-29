@@ -181,6 +181,10 @@ ul li a:hover {
   font-size: 0.95rem;
 }
 
+.contact-details p:last-of-type { 
+  white-space: nowrap; 
+}
+
 .social-media {
   margin-top: auto;
 }

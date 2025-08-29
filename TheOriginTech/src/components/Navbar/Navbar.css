@@ -77,30 +77,56 @@
   box-shadow: 0 5px 20px rgba(6, 124, 243, 0.3);
 }
 
-.getStarted-btn {
-  background-color: transparent;
-  outline: none;
-  border: none;
-}
-
 .cta-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 30px rgba(0, 77, 153, 0.5);
   color: white;
 }
 
+/* 🔽 Dropdown Styles */
+.services {
+  position: relative;
+}
+
+.services > .nav-link {
+  cursor: pointer;
+}
+
 .dropdownStyle {
   display: none;
-  position: fixed;
-  top: 100px;
-  right: 400px;
-  z-index: 3333;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  list-style: none;
+  padding: 10px 0;
+  min-width: 270px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.dropdownStyle li {
+  padding: 8px 20px;
+}
+
+.dropdownStyle li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s ease;
+}
+
+.dropdownStyle li a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #04b8ff;
 }
 
 .services:hover .dropdownStyle {
   display: block;
 }
 
+/* Hamburger */
 .HamburgerMenu {
   visibility: hidden;
 }
@@ -109,15 +135,6 @@
 .GiHamburgerMenu {
   display: none;
 }
-
-/* .FormPupupFilling {
-  z-index: 1000;
-  position: absolute;
-  top: 3vh;
-  width: 70vw;
-  background-color: red;
-  border-radius: 10px;
-} */
 
 @media (max-width: 768px) {
   .nav-container {

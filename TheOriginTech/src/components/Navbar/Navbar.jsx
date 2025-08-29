@@ -4,12 +4,9 @@ import "./Navbar.css";
 import HamburgerMenu from "./HamburgerMenu";
 import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
-// import FormPupup from "../Form/FormPopup/FormPopup";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  // const [formPopup, setFormPopup] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -32,18 +29,98 @@ const Navbar = () => {
           </NavLink>
 
           <ul className="nav-menu">
-            <li>
+            {/* 🔽 Services Dropdown */}
+            <li className="services">
               <NavLink
-                className={({ isActive }) =>
-                  isActive ? "nav-link active" : "nav-link"
-                }
                 to={"/services"}
+                className="nav-link"
                 onClick={() => window.scrollTo(0, 0)}
               >
-                Services{" "}
+                Services ▾
               </NavLink>
+              <ul className="dropdownStyle">
+                <li>
+                  
+                  <NavLink
+                    to="/services/WebAppServiceListDetail"
+                    className={({ isActive }) =>
+                      isActive ? "nav-link active" : "nav-link"
+                    }
+                    onClick={() => window.scrollTo(0, 0)}
+                  >
+                    Web & App Development
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/services/DigitalMarketingServiceListDetail"
+                    className={({ isActive }) =>
+                      isActive ? "nav-link active" : "nav-link"
+                    }
+                    onClick={() => window.scrollTo(0, 0)}
+                  >
+                    Digital Marketing
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/services/SocialMediaServiceListDetail"
+                    className={({ isActive }) =>
+                      isActive ? "nav-link active" : "nav-link"
+                    }
+                    onClick={() => window.scrollTo(0, 0)}
+                  >
+                    Social Media 
+                  </NavLink>
+                </li>
+                 <li>
+                  <NavLink
+                    to="/services/SEOServiceListDetail"
+                    className={({ isActive }) =>
+                      isActive ? "nav-link active" : "nav-link"
+                    }
+                    onClick={() => window.scrollTo(0, 0)}
+                  >
+                    SEO
+                  </NavLink>
+                </li>
+                  <li>
+                    <NavLink
+                      to="/services/PPCServiceListDetail"
+                      className={({ isActive }) =>
+                        isActive ? "nav-link active" : "nav-link"
+                      }
+                      onClick={() => window.scrollTo(0, 0)}
+                    >
+                      PPC Advertising
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/services/ContentMarketingServiceListDetail"
+                      className={({ isActive }) =>
+                        isActive ? "nav-link active" : "nav-link"
+                      }
+                      onClick={() => window.scrollTo(0, 0)}
+                    >
+                      Content Marketing
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/services/EcommerceServiceListDetail"
+                      className={({ isActive }) =>
+                        isActive ? "nav-link active" : "nav-link"
+                      }
+                      onClick={() => window.scrollTo(0, 0)}
+                    >
+                      Ecommerce Solution
+                    </NavLink>
+                  </li>
+              </ul>
             </li>
-
+            
+             
             <li>
               <NavLink
                 className={({ isActive }) =>
@@ -52,7 +129,7 @@ const Navbar = () => {
                 to={"/aboutus"}
                 onClick={() => window.scrollTo(0, 0)}
               >
-                About Us{" "}
+                About Us
               </NavLink>
             </li>
 
@@ -64,7 +141,7 @@ const Navbar = () => {
                 to={"/ourwork"}
                 onClick={() => window.scrollTo(0, 0)}
               >
-                Our Work{" "}
+                Our Work
               </NavLink>
             </li>
 
@@ -79,6 +156,7 @@ const Navbar = () => {
                 Pricing
               </NavLink>
             </li>
+
             <li>
               <NavLink
                 className={({ isActive }) =>
@@ -102,24 +180,12 @@ const Navbar = () => {
               window.scrollTo({ top: window.innerHeight, behavior: "smooth" })
             }
           >
-            <button
-              className="cta-button"
-              //  onClick={() => setFormPopup(true)}
-            >
-              Get Started
-            </button>
+            <button className="cta-button">Get Started</button>
           </NavLink>
 
           {isMenuOpen && <HamburgerMenu className="HamburgerMenu" />}
         </nav>
       </header>
-
-      {/* {formPopup && (
-        <FormPupup
-          onClose={() => setFormPopup(false)}
-          className="FormPupupFilling"
-        />
-      )} */}
     </>
   );
 };

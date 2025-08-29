@@ -1,45 +1,57 @@
-.contactHeroVideo {
-  position: relative;
-  width: 100%;
-  height: 500px; /* adjust as needed */
-  overflow: hidden;
+.contact-cards {
   display: flex;
-  justify-content: center; /* horizontal center */
-  align-items: flex-end;   /* vertical: move to bottom */
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  flex-wrap: wrap;
+  background: linear-gradient(135deg, #000000, #000000);
+}
+
+.contact-card {
+  background: linear-gradient(145deg, #102542, #0a192f);
+  color: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 320px;
   text-align: center;
-  color: white;
-  padding-bottom: 80px;    /* space from bottom */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(0, 173, 255, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
 }
 
-
-.backgroundVideo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 25px rgba(0, 173, 255, 0.3);
+  border-color: #00adff;
 }
 
-.heroContent {
-  position: relative;
-  z-index: 2;
-  text-align: center;
+.contact-card h2 {
+  font-size: clamp(1rem, 1.1vw, 1.3rem); /* auto-resizes based on length/screen */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* optional */
 }
 
-.heroContent h1 {
-  font-size: 3rem;
-  font-weight: 900;
-  /* Soft aesthetic gradient */
-  background: linear-gradient(135deg, #6dd5ed, #2193b0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.contact-card .line {
+  width: 60px;
+  height: 3px;
+  background: #00adff;
+  margin: 0.5rem auto 1.2rem auto;
+  border-radius: 2px;
 }
 
-.heroContent p {
-  font-size: 1.05rem;
-  margin-top: 0.5rem;
-  color: #ffffff;
+.contact-card p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 8px 0;
+  font-size: 0.95rem;
+  color: #dce7ff;
 }
 
+.contact-card .icon {
+  flex-shrink: 0;
+  font-size: 1.2rem;
+  color: #00adff;
+}

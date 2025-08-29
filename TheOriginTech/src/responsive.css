@@ -1,0 +1,27 @@
+/* Tablets */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  header {
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+  }
+
+  header {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .box {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

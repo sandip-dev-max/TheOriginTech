@@ -243,7 +243,7 @@ const OriginTechWebsite = () => {
                 </div>
 
                 <div className="contact-details">
-                  <h4>Contact Details 📧</h4>
+                  <h4>Contact Details </h4>
                   <p>📞 +977-9704525401</p>
                   <p>✉️ theorigintechnology@gmail.com</p>
                 </div>
@@ -271,7 +271,7 @@ const OriginTechWebsite = () => {
             </div>
             <div class="map-container">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.788741061531!2d85.34295951023853!3d27.685641176095608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198d7af4ff3b%3A0x4f545ba343e2a265!2sEverest%20Global%20Network!5e1!3m2!1sen!2snp!4v1755981229227!5m2!1sen!2snp"
+                src="https://www.google.com/maps?q=27.68456,85.34766&z=15&output=embed"
                 width="600"
                 height="450"
                 style={{ border: 0 }}

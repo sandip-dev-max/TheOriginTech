@@ -5,7 +5,7 @@ import sabina from "../../../assets/teamImages/sabina.PNG";
 import bipul from "../../../assets/teamImages/bipul.PNG";
 import sonu from "../../../assets/teamImages/sonu.PNG";
 import sandip from "../../../assets/teamImages/sandip.PNG";
-import ishab from "../../../assets/teamImages/ishab.PNG";
+import ishab from "../../../assets/teamImages/ishab.jpg"
 import chitra from "../../../assets/teamImages/chitra.png";
 import mannu from "../../../assets/teamImages/mannu.png";
 

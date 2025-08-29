@@ -14,6 +14,7 @@ import EcommerceServiceListDetail from "./components/ServiceListDetail/Ecommerce
 import PPCServiceListDetail from "./components/ServiceListDetail/PPCServiceListDetail/PPCServiceListDetail";
 import SEOServiceListDetail from "./components/ServiceListDetail/SEOServiceListDetail/SEOServiceListDetail";
 import SocialMediaServiceListDetail from "./components/ServiceListDetail/SocialMediaServiceListDetail/SocialMediaServiceListDetail";
+import  './responsive.css'; 
 
 function App() {
   return (
