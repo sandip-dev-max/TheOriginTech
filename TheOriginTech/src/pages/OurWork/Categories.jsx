@@ -24,6 +24,9 @@ import design19 from "../../assets/ourdesigns/design19.jpg";
 import design20 from "../../assets/ourdesigns/design20.jpeg";
 import design21 from "../../assets/ourdesigns/design21.jpeg";
 import design22 from "../../assets/ourdesigns/design22.jpeg";
+import design23 from "../../assets/ourdesigns/design23.jpeg"
+import design24 from "../../assets/ourdesigns/design24.jpeg"
+import design25 from "../../assets/ourdesigns/design25.jpeg"
 
 const Categories = () => {
   const categories = {
@@ -31,6 +34,7 @@ const Categories = () => {
       design1, design2, design3, design4, design5, design6, design7, design8,
       design9, design10, design11, design12, design13, design14, design15,
       design16, design17, design18, design19, design20, design21, design22,
+      design23, design24, design25
     ],
     "Web & App Development": [design1, design2, design3, design4], // placeholder
     "Digital Marketing": [design5, design6, design7, design8], // placeholder

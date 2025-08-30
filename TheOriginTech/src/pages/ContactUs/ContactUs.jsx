@@ -9,19 +9,19 @@ import "./ContactUs.css";
 const teamMembers = [
   {
     name: "MR. BIBEK KUMAR SHARMA",
-    email: "bibeksharma@email.com",
+    email: "theorigintechnology@gmail.com",
     phone: "+977 9824870541",
     position: "Founder / Director",
   },
   {
     name: "ER. SHIVANG DUTTA",
-    email: "shivangdutta@email.com",
+    email: "chypshivang.chinaembassy@gmail.com",
     phone: "+977 9869165507",
     position: "Chief Executive Officer",
   },
   {
     name: "MR. SONY ALY",
-    email: "michael.lee@email.com",
+    email: "tsmentsonu@gmail.com",
     phone: "+977 9813684661",
     position: "Managing Director",
   },
