@@ -1,7 +1,7 @@
 import React from "react";
 import "./ThreePillars.css";
 import ceo from "../../../assets/threePillars/ceo.PNG";
-import founder from "../../../assets/threePillars/founder.PNG";
+import founder from "../../../assets/threePillars/founder.jpg";
 import manager from "../../../assets/threePillars/manager.PNG";
 
 const ThreePillars = () => {

@@ -15,7 +15,7 @@ const teamMembers = [
   },
   {
     name: "ER. SHIVANG DUTTA",
-    email: "chypshivang.chinaembassy@gmail.com",
+    email: "shivangdutta1@gmail.com",
     phone: "+977 9869165507",
     position: "Chief Executive Officer",
   },
